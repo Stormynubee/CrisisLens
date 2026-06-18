@@ -1,0 +1,32 @@
+{
+  "documentId": "pm-kisan-rejection",
+  "responses": [
+    {
+      "paragraphId": "p-6",
+      "language": "en",
+      "gist": "Your PM-KISAN payment for April–July 2026 has been rejected after verification. The letter lists specific grounds below, including land record mismatch and Aadhaar linking problems.",
+      "whatThisMeans": "You will not receive the Rs. 2,000 installment until these issues are resolved. This notice explains why the payment was blocked.",
+      "suggestedActions": [
+        { "id": "k1", "text": "Consider reading the numbered grounds below carefully to see which apply to you", "isCompleted": false, "priority": "high" },
+        { "id": "k2", "text": "You may want to gather your land records and Aadhaar card before visiting the BDO office", "isCompleted": false, "priority": "medium" }
+      ],
+      "uncertainSections": [
+        "0.7 acres transferred via registered sale deed (Deed No. 4521/2025)"
+      ],
+      "sourceQuote": "Upon verification, it has been found that your application has been REJECTED for the current installment period (April-July 2026) on the following grounds:"
+    },
+    {
+      "paragraphId": "p-10",
+      "language": "en",
+      "gist": "You may file an appeal within 30 days of this notice — by 08.07.2026. Submit documents to the Block Development Officer (BDO), Dharamgarh Block, including updated land records, Aadhaar copy, bank passbook, this notice, and Form PM-KISAN-REV-1.",
+      "whatThisMeans": "You have about one month to challenge the rejection. Missing the deadline may make the rejection final and could suspend future payments.",
+      "suggestedActions": [
+        { "id": "k3", "text": "Consider filing the appeal before 08.07.2026", "isCompleted": false, "priority": "high" },
+        { "id": "k4", "text": "You may want to collect updated Record of Rights (RoR) from the Tehsildar Office", "isCompleted": false, "priority": "high" },
+        { "id": "k5", "text": "One option is to download Form PM-KISAN-REV-1 from pmkisan.gov.in or get it at the BDO Office", "isCompleted": false, "priority": "medium" }
+      ],
+      "uncertainSections": [],
+      "sourceQuote": "APPEAL PROCESS:\nYou may file an appeal against this rejection within 30 days of the date of this notice (i.e., by 08.07.2026) by submitting the following documents to the Block Development Officer (BDO), Dharamgarh Block:"
+    }
+  ]
+}
