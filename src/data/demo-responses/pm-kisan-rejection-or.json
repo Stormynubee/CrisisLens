@@ -1,0 +1,32 @@
+{
+  "documentId": "pm-kisan-rejection",
+  "responses": [
+    {
+      "paragraphId": "p-6",
+      "language": "or",
+      "gist": "ଯାଞ୍ଚ ପରେ ଆପଣଙ୍କ PM-KISAN ଅପ୍ରେଲ–ଜୁଲାଇ ୨୦୨୬ କିସ୍ତି ପ୍ରତ୍ୟାଖ୍ୟାନ ହୋଇଛି। ନିମ୍ନରେ ଦର୍ଶାଯାଇଥିବା କାରଣ — ଜମି ରେକର୍ଡ ମିଳୁନାହିଁ ଏବଂ Aadhaar ଲିଙ୍କ୍ ସମସ୍ୟା — ଅନ୍ତର୍ଭୁକ୍ତ।",
+      "whatThisMeans": "ଏହି ସମସ୍ୟା ସମାଧାନ ନ ହେବା ପର୍ଯ୍ୟନ୍ତ ଆପଣ Rs. ୨,୦୦୦ କିସ୍ତି ପାଇବେ ନାହିଁ। ଏହି ନୋଟିସ୍ କାହିଁକି ପେମେଣ୍ଟ ଅଟକିଲା ତାହା ବୁଝାଏ।",
+      "suggestedActions": [
+        { "id": "k1", "text": "ନିମ୍ନରେ ଲିଖିଥିବା କାରଣଗୁଡ଼ିକ ଧ୍ୟାନରେ ପଢ଼ି କେଉଁଟି ଆପଣଙ୍କ ପାଇଁ ପ୍ରଯୁଜ୍ୟ ତାହା ବିଚାରନ୍ତୁ", "isCompleted": false, "priority": "high" },
+        { "id": "k2", "text": "BDO କାର୍ଯ୍ୟାଳୟକୁ ଯିବା ପୂର୍ବରୁ ଜମି ରେକର୍ଡ ଓ Aadhaar କାର୍ଡ ସଂଗ୍ରହ କରିବା ଉଚିତ ଭାବିପାରନ୍ତି", "isCompleted": false, "priority": "medium" }
+      ],
+      "uncertainSections": [
+        "0.7 acres transferred via registered sale deed (Deed No. 4521/2025)"
+      ],
+      "sourceQuote": "Upon verification, it has been found that your application has been REJECTED for the current installment period (April-July 2026) on the following grounds:"
+    },
+    {
+      "paragraphId": "p-10",
+      "language": "or",
+      "gist": "ଏହି ନୋଟିସର ୩୦ ଦିନ ଭିତରେ — ୦୮.୦୭.୨୦୨୬ ପର୍ଯ୍ୟନ୍ତ — ଆପିଲ୍ କରିପାରିବେ। ଅଦ୍ୟତନ ଜମି ରେକର୍ଡ, Aadhaar କପି, ବ୍ୟାଙ୍କ ପାସ୍‌ବୁକ୍, ଏହି ନୋଟିସ୍ ଓ Form PM-KISAN-REV-1 ସହ ଧରମଗଡ଼ ବ୍ଲକ BDO କଛରେ ଦାଖଲ କରନ୍ତୁ।",
+      "whatThisMeans": "ପ୍ରତ୍ୟାଖ୍ୟାନକୁ ଚ୍ୟାଲେଞ୍ଜ କରିବାକୁ ପ୍ରାୟ ଏକ ମାସ ସମୟ ଅଛି। ସମୟ ଶେଷ ହେଲେ ପ୍ରତ୍ୟାଖ୍ୟାନ ଚୂଡ଼ାନ୍ତ ହୋଇପାରେ ଏବଂ ଭବିଷ୍ୟତ କିସ୍ତି ବନ୍ଦ ହୋଇପାରେ।",
+      "suggestedActions": [
+        { "id": "k3", "text": "୦୮.୦୭.୨୦୨୬ ପୂର୍ବରୁ ଆପିଲ୍ ଦାଖଲ କରିବା ବିଚାରନ୍ତୁ", "isCompleted": false, "priority": "high" },
+        { "id": "k4", "text": "ତହସିଲଦାର କାର୍ଯ୍ୟାଳୟରୁ ଅଦ୍ୟତନ Record of Rights (RoR) ନେବା ଉଚିତ ଭାବିପାରନ୍ତି", "isCompleted": false, "priority": "high" },
+        { "id": "k5", "text": "Form PM-KISAN-REV-1 pmkisan.gov.in ରୁ ଡାଉନଲୋଡ୍ କିମ୍ବା BDO କାର୍ଯ୍ୟାଳୟରୁ ନେବା ଏକ ବିକଳ୍ପ", "isCompleted": false, "priority": "medium" }
+      ],
+      "uncertainSections": [],
+      "sourceQuote": "APPEAL PROCESS:\nYou may file an appeal against this rejection within 30 days of the date of this notice (i.e., by 08.07.2026) by submitting the following documents to the Block Development Officer (BDO), Dharamgarh Block:"
+    }
+  ]
+}
