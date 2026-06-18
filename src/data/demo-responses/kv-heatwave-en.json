@@ -1,0 +1,43 @@
+{
+  "documentId": "kv-heatwave",
+  "responses": [
+    {
+      "paragraphId": "p-4",
+      "language": "en",
+      "gist": "School will close at 12:00 noon instead of the usual 3:30 PM. Students must leave the school building within 30 minutes after dismissal.",
+      "whatThisMeans": "Your child will finish school 3.5 hours earlier than usual. Pick-up time is now noon, not 3:30 PM.",
+      "suggestedActions": [
+        { "id": "a3", "text": "Consider arranging to pick up your child by 12:00 noon", "isCompleted": false, "priority": "high" },
+        { "id": "a4", "text": "You may want to inform anyone who usually picks up your child about the time change", "isCompleted": false, "priority": "high" }
+      ],
+      "uncertainSections": [],
+      "sourceQuote": "1. All classes from I to XII shall be dismissed at 12:00 noon instead of the regular dismissal time of 3:30 PM. Students are directed to vacate the school premises within 30 minutes of dismissal."
+    },
+    {
+      "paragraphId": "p-5",
+      "language": "en",
+      "gist": "School buses will now leave at 12:30 PM instead of the regular time. Children using the bus must be at their bus assembly point by 12:15 PM. The school will NOT send separate messages to each parent about this.",
+      "whatThisMeans": "If your child takes the school bus, they need to be at their bus stop area by 12:15 PM. You will not get a personal phone call or message about this — this circular IS the notice.",
+      "suggestedActions": [
+        { "id": "a5", "text": "Consider telling your child the new bus time: be at assembly point by 12:15 PM", "isCompleted": false, "priority": "high" },
+        { "id": "a6", "text": "You may want to note: buses leave at 12:30 PM sharp — no waiting", "isCompleted": false, "priority": "high" }
+      ],
+      "uncertainSections": [],
+      "sourceQuote": "2. Parents/Guardians of students availing school bus transport are hereby informed that the bus departure schedule stands revised. Buses shall depart from the school campus at 12:30 PM sharp. Students must report to their respective bus assembly points by 12:15 PM. No separate intimation shall be sent to individual parents."
+    },
+    {
+      "paragraphId": "p-8",
+      "language": "en",
+      "gist": "Teachers must keep drinking water available in classrooms. If any student shows signs of heat-related illness, it must be reported to the school medical room right away. Parents will be told within 24 hours if their child has heat exhaustion symptoms.",
+      "whatThisMeans": "The school is watching for heat illness. If your child feels dizzy, nauseous, or overheated, the school may contact you within a day.",
+      "suggestedActions": [
+        { "id": "a9", "text": "Consider making sure the school has your current phone number", "isCompleted": false, "priority": "high" },
+        { "id": "a10", "text": "You may want to teach your child to tell a teacher if they feel unwell from heat", "isCompleted": false, "priority": "medium" }
+      ],
+      "uncertainSections": [
+        "symptoms of heat exhaustion"
+      ],
+      "sourceQuote": "5. Teachers are directed to ensure adequate drinking water arrangements in their respective classrooms. Any case of heat-related illness must be reported to the school medical room immediately. Parents shall be contacted within 24 hours if their ward reports any symptoms of heat exhaustion."
+    }
+  ]
+}
