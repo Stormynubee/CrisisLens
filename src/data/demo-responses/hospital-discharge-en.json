@@ -1,0 +1,36 @@
+{
+  "documentId": "hospital-discharge",
+  "responses": [
+    {
+      "paragraphId": "p-7",
+      "language": "en",
+      "gist": "You are being sent home with five medicines: pain relief (Diclofenac), an antibiotic (Cefuroxime), a stomach protector (Pantoprazole), calcium with Vitamin D, and a syrup for constipation if needed.",
+      "whatThisMeans": "Take these medicines exactly as written on the label. The antibiotic course is 5 days; pain and stomach medicines are for 7 days. Calcium continues for 30 days.",
+      "suggestedActions": [
+        { "id": "h1", "text": "Consider keeping a written schedule for when to take each medicine", "isCompleted": false, "priority": "high" },
+        { "id": "h2", "text": "You may want to take pain medicine after food, as the note says", "isCompleted": false, "priority": "medium" },
+        { "id": "h3", "text": "One option is to ask a pharmacist to explain any medicine names you do not recognize", "isCompleted": false, "priority": "medium" }
+      ],
+      "uncertainSections": [
+        "analgesic/antipyretic",
+        "gastroprotection"
+      ],
+      "sourceQuote": "DISCHARGE MEDICATIONS:\n1. Tab. Diclofenac Sodium 50mg — 1 tablet twice daily after food for 7 days (analgesic/antipyretic)\n2. Tab. Cefuroxime 500mg — 1 tablet twice daily after food for 5 days (antibiotic)"
+    },
+    {
+      "paragraphId": "p-8",
+      "language": "en",
+      "gist": "Rest in bed with your right leg raised on two pillows for at least two weeks. Do not put weight on the injured leg until an orthopedic doctor clears you. Keep the cast dry. Come back within 48 hours for a cast check.",
+      "whatThisMeans": "Your leg fracture needs strict rest and a follow-up visit within two days. Watch for warning signs like swelling, numbness, bad smell from the cast, fever above 100.4°F, or pain that gets worse.",
+      "suggestedActions": [
+        { "id": "h4", "text": "Consider booking an orthopedic follow-up within 48 hours", "isCompleted": false, "priority": "high" },
+        { "id": "h5", "text": "You may want to bring this discharge summary and X-ray films to the follow-up visit", "isCompleted": false, "priority": "high" },
+        { "id": "h6", "text": "One option is to call the hospital immediately if toes swell, foot feels numb, or fever rises above 100.4°F", "isCompleted": false, "priority": "high" }
+      ],
+      "uncertainSections": [
+        "cleared by orthopedic surgeon"
+      ],
+      "sourceQuote": "ADVICE ON DISCHARGE:\n- Strict bed rest with right leg elevated on 2 pillows for minimum 2 weeks\n- Do NOT bear weight on right leg until cleared by orthopedic surgeon\n- Keep POP cast dry at all times. Do not insert objects inside the cast."
+    }
+  ]
+}
