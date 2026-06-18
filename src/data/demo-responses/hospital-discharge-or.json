@@ -1,0 +1,36 @@
+{
+  "documentId": "hospital-discharge",
+  "responses": [
+    {
+      "paragraphId": "p-7",
+      "language": "or",
+      "gist": "ଆପଣଙ୍କୁ ଘରକୁ ପାଞ୍ଚଟି ଔଷଧ ସହ ଛାଡ଼ା ଯାଉଛି: ଯନ୍ତ୍ରଣା ନିବାରକ (Diclofenac), ଆଣ୍ଟିବାୟୋଟିକ୍ (Cefuroxime), ପେଟ୍ ସୁରକ୍ଷା (Pantoprazole), କalsium ଓ Vitamin D, ଏବଂ ଯଦି ଆବଶ୍ୟକ ହେଲେ କବଜ ପାଇଁ ସିରପ।",
+      "whatThisMeans": "ଲେବୁଲରେ ଲେଖା ଅନୁସାରେ ଔଷଧ ନିଅନ୍ତୁ। ଆଣ୍ଟିବାୟୋଟିକ୍ ୫ ଦିନ, ଯନ୍ତ୍ରଣା ଓ ପେଟ୍ ଔଷଧ ୭ ଦିନ, କalsium ୩୦ ଦିନ ଚାଲିବ।",
+      "suggestedActions": [
+        { "id": "h1", "text": "ପ୍ରତ୍ୟେକ ଔଷଧ କେତେବେଳେ ନେବେ ତାହା ଲିଖି ରଖିବା ବିଚାରନ୍ତୁ", "isCompleted": false, "priority": "high" },
+        { "id": "h2", "text": "ଖାଇବା ପରେ ଯନ୍ତ୍ରଣା ଔଷଧ ନେବା ଉଚିତ ଭାବିପାରନ୍ତି", "isCompleted": false, "priority": "medium" },
+        { "id": "h3", "text": "ଯେଉଁ ଔଷଧର ନାମ ବୁଝିପାରୁନାହାନ୍ତି, ଫାର୍ମାସିଷ୍ଟଙ୍କୁ ବୁଝାଇବା ଏକ ବିକଳ୍ପ", "isCompleted": false, "priority": "medium" }
+      ],
+      "uncertainSections": [
+        "analgesic/antipyretic",
+        "gastroprotection"
+      ],
+      "sourceQuote": "DISCHARGE MEDICATIONS:\n1. Tab. Diclofenac Sodium 50mg — 1 tablet twice daily after food for 7 days (analgesic/antipyretic)\n2. Tab. Cefuroxime 500mg — 1 tablet twice daily after food for 5 days (antibiotic)"
+    },
+    {
+      "paragraphId": "p-8",
+      "language": "or",
+      "gist": "ଦୁଇ ସପ୍ତାହ ପର୍ଯ୍ୟନ୍ତ ଶୟ୍ୟାରେ ବିଶ୍ରାମ ନିଅନ୍ତୁ, ଡାହାଣ ପାଦ ଦୁଇଟି ବାଲିଶ ଉପରେ ଉଠାଇ ରଖନ୍ତୁ। ଅର୍ଥୋପେଡିକ୍ ଡାକ୍ତର ଅନୁମତି ନ ଦେବା ପର୍ଯ୍ୟନ୍ତ ଆଘାତ ପାଦରେ ବୋଝ ଦିଅନ୍ତୁ ନାହିଁ। POP cast ଶୁଖିଲା ରଖନ୍ତୁ। ୪୮ ଘଣ୍ଟା ଭିତରେ cast ଯାଞ୍ଚ ପାଇଁ ଫେରନ୍ତୁ।",
+      "whatThisMeans": "ଆପଣଙ୍କ ପାଦର ଫ୍ରାକ୍ଚର୍‌କୁ କଡ଼ା ବିଶ୍ରାମ ଓ ଦୁଇ ଦିନ ଭିତରେ follow-up ଆବଶ୍ୟକ। ଆଙ୍ଗୁଠି ଫୁଲା, ଅଜଣା, castରୁ ଦୁରଗନ୍ଧ, ୧୦୦.୪°F ଉପରେ ଜ୍ୱର କିମ୍ବା ଯନ୍ତ୍ରଣା ବଢ଼ିଲେ ସତର୍କ ରୁହନ୍ତୁ।",
+      "suggestedActions": [
+        { "id": "h4", "text": "୪୮ ଘଣ୍ଟା ଭିତରେ ଅର୍ଥୋପେଡିକ୍ follow-up ବୁକ୍ କରିବା ବିଚାରନ୍ତୁ", "isCompleted": false, "priority": "high" },
+        { "id": "h5", "text": "follow-up ସମୟରେ ଏହି discharge summary ଓ X-ray ଆଣିବା ଉଚିତ ଭାବିପାରନ୍ତି", "isCompleted": false, "priority": "high" },
+        { "id": "h6", "text": "ଆଙ୍ଗୁଠି ଫୁଲିଲେ, ପାଦ ଅଜଣା ଲାଗିଲେ କିମ୍ବା ଜ୍ୱର ୧୦୦.୪°F ଉପରେ ଗଲେ ତୁରନ୍ତ ଡାକ୍ତରଖାନାକୁ ଯୋଗାଯୋଗ କରିବା ଏକ ବିକଳ୍ପ", "isCompleted": false, "priority": "high" }
+      ],
+      "uncertainSections": [
+        "cleared by orthopedic surgeon"
+      ],
+      "sourceQuote": "ADVICE ON DISCHARGE:\n- Strict bed rest with right leg elevated on 2 pillows for minimum 2 weeks\n- Do NOT bear weight on right leg until cleared by orthopedic surgeon\n- Keep POP cast dry at all times. Do not insert objects inside the cast."
+    }
+  ]
+}
