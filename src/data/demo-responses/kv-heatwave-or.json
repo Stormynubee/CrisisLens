@@ -1,0 +1,43 @@
+{
+  "documentId": "kv-heatwave",
+  "responses": [
+    {
+      "paragraphId": "p-4",
+      "language": "or",
+      "gist": "ବିଦ୍ୟାଳୟ ସବୁ ଶ୍ରେଣୀରେ ସକାଳ ୧୨:୦୦ରେ ଛାଡ଼ି ହେବ, ନିୟମିତ ୩:୩୦ PM ନୁହେଁ। ଛାତ୍ରମାନେ ଛାଡ଼ି ହେବାର ୩୦ ମିନିଟ୍ ଭିତରେ ବିଦ୍ୟାଳୟ ପରିସର ଛାଡ଼ି ଯିବେ।",
+      "whatThisMeans": "ଆପଣଙ୍କ ସନ୍ତାନ ନିୟମିତ ଠାରୁ ୩.୫ ଘଣ୍ଟା ପୂର୍ବରୁ ସ୍କୁଲ ଶେଷ କରିବ। ନୂଆ pick-up ସମୟ ବିହା ତର, ଅପରାହ୍ନ ୩:୩୦ ନୁହେଁ।",
+      "suggestedActions": [
+        { "id": "a3", "text": "ବିହା ୧୨:୦୦ ପର୍ଯ୍ୟନ୍ତ ସନ୍ତାନକୁ ନେବାର ବ୍ୟବସ୍ଥା କରିବା ବିଚାରନ୍ତୁ", "isCompleted": false, "priority": "high" },
+        { "id": "a4", "text": "ଯେଉଁମାନେ ସାଧାରଣତଃ ସନ୍ତାନକୁ ନେଇଥାନ୍ତି ସେମାନଙ୍କୁ ସମୟ ପରିବର୍ତ୍ତନ ବିଷୟରେ ଜଣାଇବା ଉଚିତ ଭାବିପାରନ୍ତି", "isCompleted": false, "priority": "high" }
+      ],
+      "uncertainSections": [],
+      "sourceQuote": "1. All classes from I to XII shall be dismissed at 12:00 noon instead of the regular dismissal time of 3:30 PM. Students are directed to vacate the school premises within 30 minutes of dismissal."
+    },
+    {
+      "paragraphId": "p-5",
+      "language": "or",
+      "gist": "ସ୍କୁଲ ବସ୍ ବର୍ତ୍ତମାନ ୧୨:୩୦ PM ରେ ଛାଡ଼ିବ, ନିୟମିତ ସମୟ ନୁହେଁ। ବସ୍ ବ୍ୟବହାର କରୁଥିବା ଛାତ୍ରମାନେ ୧୨:୧୫ PM ପର୍ଯ୍ୟନ୍ତ ନିଜ ବସ୍ ସମାବେଶ ସ୍ଥଳରେ ରହିବେ। ସ୍କୁଲ ପ୍ରତ୍ୟେକ ଅଭିଭାବକଙ୍କୁ ଅଲଗା ସୂଚନା ପଠାଇବ ନାହିଁ।",
+      "whatThisMeans": "ଯଦି ଆପଣଙ୍କ ସନ୍ତାନ ସ୍କୁଲ ବସ୍ ନେଇଥାଏ, ସେ ୧୨:୧୫ PM ପର୍ଯ୍ୟନ୍ତ ବସ୍ ସ୍ଥଳରେ ରହିବା ଆବଶ୍ୟକ। ବ୍ୟକ୍ତିଗତ ଫୋନ୍ କଲ୍ କିମ୍ବା ମେସେଜ୍ ମିଳିବ ନାହିଁ — ଏହି ପରିପତ୍ରଇ ସୂଚନା।",
+      "suggestedActions": [
+        { "id": "a5", "text": "ନୂଆ ବସ୍ ସମୟ ସନ୍ତାନକୁ ଜଣାଇବା ବିଚାରନ୍ତୁ: ୧୨:୧୫ PM ପର୍ଯ୍ୟନ୍ତ ସମାବେଶ ସ୍ଥଳରେ", "isCompleted": false, "priority": "high" },
+        { "id": "a6", "text": "ବସ୍ ୧୨:୩୦ PM ଠିକ୍ ଛାଡ଼ିବ — ଅପେକ୍ଷା କରିବ ନାହିଁ, ଏହା ମନେ ରଖିବା ଉଚିତ", "isCompleted": false, "priority": "high" }
+      ],
+      "uncertainSections": [],
+      "sourceQuote": "2. Parents/Guardians of students availing school bus transport are hereby informed that the bus departure schedule stands revised. Buses shall depart from the school campus at 12:30 PM sharp. Students must report to their respective bus assembly points by 12:15 PM. No separate intimation shall be sent to individual parents."
+    },
+    {
+      "paragraphId": "p-8",
+      "language": "or",
+      "gist": "ଶିକ୍ଷକମାନେ ଶ୍ରେଣୀକକ୍ଷରେ ଯଥେଷ୍ଟ ପାଣି ଯୋଗାଡ଼ କରିବେ। କୌଣସି ଛାତ୍ରଙ୍କର ଗରମ ଜନିତ ଅସୁସ୍ଥତା ଦେଖାଦେଲେ ତୁରନ୍ତ ସ୍କୁଲ ମେଡିକାଲ୍ ରୁମ୍‌କୁ ଜଣାଇବ। ଗରମ ଥକାବସ୍ତା ଲକ୍ଷଣ ଥିଲେ ୨୪ ଘଣ୍ଟା ଭିତରେ ଅଭିଭାବକଙ୍କୁ ଯୋଗାଯୋଗ କରାଯିବ।",
+      "whatThisMeans": "ସ୍କୁଲ ଗରମ ଜନିତ ଅସୁସ୍ଥତା ପାଇଁ ନଜର ରଖୁଛି। ଆପଣଙ୍କ ସନ୍ତାନ ମୂର୍ଚ୍ଛା, ବାନ୍ତି କିମ୍ବା ଅତ୍ୟଧିକ ଗରମ ଅନୁଭବ କଲେ, ଏକ ଦିନ ଭିତରେ ଆପଣଙ୍କୁ ଯୋଗାଯୋଗ ହୋଇପାରେ।",
+      "suggestedActions": [
+        { "id": "a9", "text": "ସ୍କୁଲରେ ଆପଣଙ୍କ ବର୍ତ୍ତମାନର ଫୋନ୍ ନମ୍ବର ଅଛି କି ନାହିଁ ଯାଞ୍ଚ କରିବା ବିଚାରନ୍ତୁ", "isCompleted": false, "priority": "high" },
+        { "id": "a10", "text": "ସନ୍ତାନକୁ ଗରମରେ ଅସୁବିଧା ହେଲେ ଶିକ୍ଷକଙ୍କୁ ଜଣାଇବା ଶିଖାଇବା ଉଚିତ ଭାବିପାରନ୍ତି", "isCompleted": false, "priority": "medium" }
+      ],
+      "uncertainSections": [
+        "symptoms of heat exhaustion"
+      ],
+      "sourceQuote": "5. Teachers are directed to ensure adequate drinking water arrangements in their respective classrooms. Any case of heat-related illness must be reported to the school medical room immediately. Parents shall be contacted within 24 hours if their ward reports any symptoms of heat exhaustion."
+    }
+  ]
+}
