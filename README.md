@@ -6,6 +6,7 @@
 
 **A split-pane crisis document translator and simplification workspace. Keep the original visible, highlight risk, and translate legal/medical jargon into plain language.**
 
+[![Release](https://img.shields.io/github/v/release/Stormynubee/CrisisLens?style=flat-square)](https://github.com/Stormynubee/CrisisLens/releases/tag/v1.0.0)
 [![Deployed on Vercel](https://img.shields.io/badge/Deployed-Vercel-black?style=flat-square&logo=vercel)](https://crisislens-ashen.vercel.app)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
 [![Next.js](https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=next.js)](https://nextjs.org/)
