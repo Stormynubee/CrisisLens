@@ -79,6 +79,7 @@ export function GistSidebar({ paragraph, gist, isLoading, language }: GistSideba
           ) : gist ? (
             <motion.div
               key={`gist-${paragraph.id}-${language}`}
+              data-testid="gist-sidebar-content"
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}

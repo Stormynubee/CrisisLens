@@ -85,6 +85,11 @@ function main() {
   } else {
     assert('public/og-image.png exists', true);
   }
+  if (!existsSync(join(ROOT, 'docs/screenshots/01-landing.png'))) {
+    warn('docs/screenshots/01-landing.png missing — run npm run screenshots before Devpost');
+  } else {
+    assert('docs/screenshots/01-landing.png exists', true);
+  }
 
   console.log('\n--- Running production build ---\n');
   try {

@@ -78,6 +78,20 @@ CrisisLens is **not** a black-box chatbot. It is a **paper-plain visual workspac
 
 ---
 
+## Screenshots
+
+| Landing | Split-pane viewer (Odia demo) |
+|---------|-------------------------------|
+| ![Landing](docs/screenshots/01-landing.png) | ![Viewer](docs/screenshots/02-viewer-split-pane.png) |
+
+| Odia gist + HITL | Mobile layout |
+|------------------|---------------|
+| ![Odia gist](docs/screenshots/03-viewer-odia-gist.png) | ![Mobile](docs/screenshots/04-viewer-mobile.png) |
+
+Captured automatically from production with Playwright (`npm run screenshots`).
+
+---
+
 ## 3. Impact
 
 *Rubric: Impact*

@@ -43,6 +43,7 @@ export function ParagraphBlock({ paragraph, isSelected, onClick }: ParagraphBloc
     <button
       type="button"
       onClick={handleClick}
+      data-testid={`paragraph-${paragraph.id}`}
       className={clsx(
         'paragraph-clickable w-full text-left',
         urgencyBandClass[paragraph.urgency],
