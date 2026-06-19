@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CrisisLens - Onboarding</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "primary-fixed-dim": "#ccc5c2",
+                      "on-background": "#1c1b1b",
+                      "on-secondary-fixed-variant": "#4a4641",
+                      "surface-container": "#f1edec",
+                      "surface-container-highest": "#e6e1e0",
+                      "primary-fixed": "#e9e1dd",
+                      "on-primary-container": "#888380",
+                      "on-error": "#ffffff",
+                      "error": "#ba1a1a",
+                      "on-secondary-fixed": "#1e1b17",
+                      "surface-tint": "#625d5b",
+                      "surface-bright": "#fdf8f7",
+                      "background": "#fdf8f7",
+                      "on-tertiary-fixed": "#1a1c1c",
+                      "surface": "#fdf8f7",
+                      "tertiary": "#000000",
+                      "outline": "#7e7570",
+                      "on-error-container": "#93000a",
+                      "outline-variant": "#d0c4be",
+                      "on-surface-variant": "#4d4540",
+                      "primary": "#000000",
+                      "surface-container-lowest": "#ffffff",
+                      "on-primary-fixed-variant": "#4a4643",
+                      "secondary-fixed-dim": "#ccc5bf",
+                      "on-tertiary-fixed-variant": "#454747",
+                      "on-primary": "#ffffff",
+                      "inverse-surface": "#313030",
+                      "surface-container-high": "#ece7e6",
+                      "inverse-primary": "#ccc5c2",
+                      "on-secondary-container": "#66625d",
+                      "inverse-on-surface": "#f4f0ef",
+                      "tertiary-fixed-dim": "#c6c6c6",
+                      "primary-container": "#1e1b19",
+                      "on-tertiary": "#ffffff",
+                      "on-surface": "#1c1b1b",
+                      "tertiary-container": "#1a1c1c",
+                      "on-tertiary-container": "#838484",
+                      "surface-container-low": "#f7f3f1",
+                      "secondary": "#625e59",
+                      "error-container": "#ffdad6",
+                      "secondary-fixed": "#e8e1db",
+                      "surface-variant": "#e6e1e0",
+                      "secondary-container": "#e5ded8",
+                      "on-primary-fixed": "#1e1b19",
+                      "tertiary-fixed": "#e2e2e2",
+                      "surface-dim": "#ddd9d8",
+                      "on-secondary": "#ffffff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "gutter": "16px",
+                      "container-padding": "24px",
+                      "card-gap": "20px",
+                      "unit": "4px"
+              },
+              "fontFamily": {
+                      "headline-md": [
+                              "\"Source Serif 4\""
+                      ],
+                      "body-sm": [
+                              "Inter"
+                      ],
+                      "label-md": [
+                              "JetBrains Mono"
+                      ],
+                      "label-sm": [
+                              "JetBrains Mono"
+                      ],
+                      "display-lg": [
+                              "\"Source Serif 4\""
+                      ],
+                      "body-base": [
+                              "Inter"
+                      ],
+                      "display-lg-mobile": [
+                              "\"Source Serif 4\""
+                      ]
+              },
+              "fontSize": {
+                      "headline-md": [
+                              "20px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-sm": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-md": [
+                              "13px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.02em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "label-sm": [
+                              "11px",
+                              {
+                                      "lineHeight": "14px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "display-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-base": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .pulse-lens {
+            animation: pulse-ring 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes pulse-ring {
+            0% { transform: scale(0.95); opacity: 1; }
+            50% { transform: scale(1.1); opacity: 0.7; }
+            100% { transform: scale(0.95); opacity: 1; }
+        }
+      </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col items-center justify-center p-4 selection:bg-surface-variant selection:text-on-surface">
+<!-- Intent: Onboarding Splash Screen. No Global Nav required based on 'Automatic Suppression' rule for transactional/linear flows. -->
+<main class="w-full max-w-lg mx-auto flex flex-col items-center space-y-8 animate-fade-in-up">
+<!-- Hero Section -->
+<div class="text-center space-y-4">
+<div class="relative inline-block mb-4">
+<span class="material-symbols-outlined text-6xl text-outline-variant" data-icon="description">description</span>
+<div class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full border-2 border-surface-container-lowest bg-[#1D4ED8] pulse-lens shadow-sm"></div>
+</div>
+<h1 class="font-display-lg text-display-lg text-[#1C1917]">CrisisLens</h1>
+<p class="font-body-base text-body-base text-[#57534E] max-w-sm mx-auto">
+                Understand emergency documents when every minute counts.
+            </p>
+</div>
+<!-- Action Card -->
+<div class="w-full bg-surface-container-lowest rounded-xl border border-[#E7E5E4] p-8 shadow-[0_1px_3px_rgba(28,25,23,0.05),0_1px_2px_rgba(28,25,23,0.1)]">
+<!-- Drag & Drop Area -->
+<div class="border-2 border-dashed border-[#D6D3D1] rounded-lg p-8 text-center hover:bg-surface-container-low transition-colors cursor-pointer group">
+<span class="material-symbols-outlined text-4xl text-outline-variant group-hover:text-primary transition-colors mb-4 block" data-icon="cloud_upload">cloud_upload</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6 max-w-xs mx-auto">
+                    Drag and drop your emergency letter, discharge circular, or medical bill
+                </p>
+<button class="bg-[#1D4ED8] text-on-primary hover:bg-blue-800 transition-colors px-6 py-2.5 rounded-DEFAULT font-label-md text-label-md inline-flex items-center gap-2">
+                    Select File
+                </button>
+</div>
+<!-- Divider -->
+<div class="relative my-8">
+<div class="absolute inset-0 flex items-center">
+<div class="w-full border-t border-[#E7E5E4]"></div>
+</div>
+<div class="relative flex justify-center text-sm">
+<span class="px-2 bg-surface-container-lowest font-label-sm text-label-sm text-[#A8A29E]">OR CHOOSE A DEMO</span>
+</div>
+</div>
+<!-- Demo Options -->
+<div class="space-y-3">
+<!-- Critical -->
+<button class="w-full flex items-center justify-between p-3 rounded-lg border border-red-200 bg-red-50 hover:bg-red-100 transition-colors text-red-800 text-left group">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined" data-icon="emergency">emergency</span>
+<span class="font-body-sm text-body-sm font-medium">NH-56 Discharge Letter</span>
+</div>
+<span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-opacity" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<!-- Time-Sensitive -->
+<button class="w-full flex items-center justify-between p-3 rounded-lg border border-amber-200 bg-amber-50 hover:bg-amber-100 transition-colors text-amber-800 text-left group">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined" data-icon="warning">warning</span>
+<span class="font-body-sm text-body-sm font-medium">PM-Kisan Rejection</span>
+</div>
+<span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-opacity" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<!-- Informational -->
+<button class="w-full flex items-center justify-between p-3 rounded-lg border border-green-200 bg-green-50 hover:bg-green-100 transition-colors text-green-800 text-left group">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined" data-icon="info">info</span>
+<span class="font-body-sm text-body-sm font-medium">Heatwave Safety Circular</span>
+</div>
+<span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-opacity" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Footer Info -->
+<div class="text-center space-y-3 max-w-sm">
+<div class="flex justify-center items-center gap-1.5 text-[#A8A29E]">
+<span class="material-symbols-outlined text-[16px]" data-icon="lock">lock</span>
+<p class="font-body-sm text-body-sm text-xs">
+                    CrisisLens is offline-first. Your documents never leave this device.
+                </p>
+</div>
+<p class="font-body-sm text-body-sm text-xs text-on-surface-variant">
+                Supports translation to: Plain English, Hindi (हिन्दी), and Odia (ଓଡ଼ିଆ).
+            </p>
+</div>
+</main>
+<script>
+        // Simple drag and drop visual feedback
+        const dropZone = document.querySelector('.border-dashed');
+        if(dropZone) {
+            ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+                dropZone.addEventListener(eventName, preventDefaults, false);
+            });
+
+            function preventDefaults (e) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
+
+            ['dragenter', 'dragover'].forEach(eventName => {
+                dropZone.addEventListener(eventName, highlight, false);
+            });
+
+            ['dragleave', 'drop'].forEach(eventName => {
+                dropZone.addEventListener(eventName, unhighlight, false);
+            });
+
+            function highlight(e) {
+                dropZone.classList.add('bg-surface-container-low', 'border-primary');
+            }
+
+            function unhighlight(e) {
+                dropZone.classList.remove('bg-surface-container-low', 'border-primary');
+            }
+        }
+    </script>
+</body></html>

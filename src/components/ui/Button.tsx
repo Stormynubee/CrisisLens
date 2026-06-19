@@ -14,15 +14,16 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       <button
         ref={ref}
         className={clsx(
-          'inline-flex items-center justify-center gap-2 font-medium rounded-lg transition-all duration-200 cursor-pointer',
-          'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2',
-          'disabled:opacity-50 disabled:cursor-not-allowed',
-          variant === 'primary' && 'bg-stone-900 text-white hover:bg-stone-800 active:bg-stone-950',
-          variant === 'secondary' && 'bg-white text-stone-900 border border-stone-300 hover:bg-stone-50 active:bg-stone-100',
-          variant === 'ghost' && 'text-stone-600 hover:text-stone-900 hover:bg-stone-100',
-          size === 'sm' && 'px-3 py-1.5 text-sm',
-          size === 'md' && 'px-4 py-2 text-sm',
-          size === 'lg' && 'px-6 py-3 text-base',
+          'inline-flex items-center justify-center gap-2 font-label-md transition-all duration-200 cursor-pointer',
+          'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2',
+          'disabled:opacity-50 disabled:cursor-not-allowed min-h-[44px]',
+          variant === 'primary' && 'bg-primary text-on-primary hover:opacity-90 active:opacity-80 rounded',
+          variant === 'secondary' &&
+            'bg-surface-container-lowest text-on-surface border border-outline-variant hover:bg-surface-container-low rounded',
+          variant === 'ghost' && 'text-on-surface-variant hover:text-primary hover:bg-surface-container-low rounded',
+          size === 'sm' && 'px-3 py-1.5 text-body-sm',
+          size === 'md' && 'px-4 py-2 text-body-sm',
+          size === 'lg' && 'px-6 py-3 text-body-base w-full',
           className,
         )}
         {...props}
@@ -30,6 +31,6 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         {children}
       </button>
     );
-  }
+  },
 );
 Button.displayName = 'Button';

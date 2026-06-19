@@ -9,21 +9,40 @@ import { join } from 'path';
 
 const BASE_URL = process.env.BASE_URL ?? 'https://crisislens-ashen.vercel.app';
 const OUT_DIR = join(__dirname, '..', 'docs', 'screenshots');
-const VIEWER_URL =
-  '/viewer?doc=hospital-discharge&lang=or&demo=true';
+const VIEWER_URL = '/viewer?doc=hospital-discharge&lang=or&demo=true';
 const ODIA_GIST_MARKER = 'ଔଷଧ';
 
 async function main() {
   mkdirSync(OUT_DIR, { recursive: true });
 
   const browser = await chromium.launch();
+
+  // 0. Welcome (first visit — no onboarding cookie)
+  const welcomeContext = await browser.newContext({
+    viewport: { width: 1280, height: 800 },
+    deviceScaleFactor: 1,
+  });
+  const welcomePage = await welcomeContext.newPage();
+  console.log(`Capturing from ${BASE_URL}...`);
+  await welcomePage.goto(`${BASE_URL}/welcome`, { waitUntil: 'networkidle' });
+  await welcomePage.getByRole('heading', { name: 'CrisisLens' }).waitFor();
+  await welcomePage.screenshot({ path: join(OUT_DIR, '00-welcome.png'), fullPage: false });
+  console.log('  00-welcome.png');
+  await welcomeContext.close();
+
   const context = await browser.newContext({
     viewport: { width: 1280, height: 800 },
     deviceScaleFactor: 1,
   });
+  await context.addCookies([
+    {
+      name: 'crisislens_onboarded',
+      value: '1',
+      domain: new URL(BASE_URL).hostname,
+      path: '/',
+    },
+  ]);
   const page = await context.newPage();
-
-  console.log(`Capturing from ${BASE_URL}...`);
 
   // 1. Landing
   await page.goto(`${BASE_URL}/`, { waitUntil: 'networkidle' });
@@ -54,7 +73,7 @@ async function main() {
 
   await browser.close();
 
-  // 4. Mobile viewport (fresh context)
+  // 4. Mobile viewport (fresh context with cookie)
   const mobileBrowser = await chromium.launch();
   const mobileContext = await mobileBrowser.newContext({
     viewport: { width: 390, height: 844 },
@@ -62,10 +81,19 @@ async function main() {
     isMobile: true,
     hasTouch: true,
   });
+  await mobileContext.addCookies([
+    {
+      name: 'crisislens_onboarded',
+      value: '1',
+      domain: new URL(BASE_URL).hostname,
+      path: '/',
+    },
+  ]);
   const mobilePage = await mobileContext.newPage();
   await mobilePage.goto(`${BASE_URL}${VIEWER_URL}`, { waitUntil: 'networkidle' });
   await mobilePage.getByTestId('paragraph-p-7').waitFor({ timeout: 15000 });
   await mobilePage.getByTestId('paragraph-p-7').click();
+  await mobilePage.getByRole('dialog', { name: 'Analysis panel' }).waitFor({ timeout: 10000 });
   await mobilePage.getByTestId('gist-sidebar-content').waitFor({ timeout: 10000 });
   await mobilePage
     .getByTestId('gist-sidebar-content')

@@ -1,73 +1,75 @@
-// Design tokens — single source of truth for the entire UI.
-// No magic numbers. No inline colors. Every value referenced from here.
+// Design tokens — single source of truth (Stitch Crisis Management Protocol + urgency)
 
-export const colors = {
-  // Urgency system — the core visual language of CrisisLens
-  critical: {
-    bg: '#FEF2F2',      // red-50
-    border: '#FCA5A5',   // red-300
-    text: '#991B1B',     // red-800
-    badge: '#DC2626',    // red-600
-    highlight: '#FECACA', // red-200
-  },
-  timeSensitive: {
-    bg: '#FFFBEB',       // amber-50
-    border: '#FCD34D',   // amber-300
-    text: '#92400E',     // amber-800
-    badge: '#D97706',    // amber-600
-    highlight: '#FDE68A', // amber-200
-  },
-  informational: {
-    bg: '#F0FDF4',       // green-50
-    border: '#86EFAC',   // green-300
-    text: '#166534',     // green-800
-    badge: '#16A34A',    // green-600
-    highlight: '#BBF7D0', // green-200
-  },
-
-  // Highlight types — inline span colors
-  jargon: '#FEF9C3',       // yellow-100 — medical/legal terms
-  deadline: '#FEE2E2',     // red-100 — dates, deadlines
-  instruction: '#DBEAFE',  // blue-100 — action items
-
-  // App chrome
-  bg: '#FAFAF9',           // stone-50 — warm off-white
-  surface: '#FFFFFF',
-  surfaceElevated: '#F5F5F4', // stone-100
-  border: '#E7E5E4',       // stone-200
-  borderStrong: '#D6D3D1', // stone-300
-  text: '#1C1917',         // stone-900
-  textSecondary: '#57534E', // stone-600
-  textMuted: '#A8A29E',    // stone-400
-  accent: '#1D4ED8',       // blue-700 — links, focus rings
-  accentLight: '#EFF6FF',  // blue-50
-
-  // Dark mode (optional — only if time permits)
-  dark: {
-    bg: '#0C0A09',         // stone-950
-    surface: '#1C1917',    // stone-900
-    text: '#FAFAF9',       // stone-50
-  },
+export const m3Colors = {
+  background: '#fdf8f7',
+  onBackground: '#1c1b1b',
+  surface: '#fdf8f7',
+  onSurface: '#1c1b1b',
+  onSurfaceVariant: '#4d4540',
+  surfaceContainerLowest: '#ffffff',
+  surfaceContainerLow: '#f7f3f1',
+  surfaceContainer: '#f1edec',
+  surfaceContainerHigh: '#ece7e6',
+  surfaceContainerHighest: '#e6e1e0',
+  surfaceVariant: '#e6e1e0',
+  outline: '#7e7570',
+  outlineVariant: '#d0c4be',
+  primary: '#000000',
+  onPrimary: '#ffffff',
+  primaryContainer: '#1e1b19',
+  onPrimaryContainer: '#888380',
+  secondary: '#625e59',
+  onSecondary: '#ffffff',
+  secondaryContainer: '#e5ded8',
+  onSecondaryContainer: '#66625d',
+  secondaryFixed: '#e8e1db',
+  secondaryFixedDim: '#ccc5bf',
+  error: '#ba1a1a',
+  onError: '#ffffff',
+  errorContainer: '#ffdad6',
+  onErrorContainer: '#93000a',
 } as const;
 
-export const fonts = {
-  // Display: Source Serif 4 — editorial credibility, reads as "newspaper"
-  display: "'Source Serif 4', 'Georgia', serif",
-  // Body: Inter — clear at small sizes, good for document text
-  body: "'Inter', 'system-ui', sans-serif",
-  // Mono: JetBrains Mono — for urgency codes, technical labels
-  mono: "'JetBrains Mono', monospace",
+export const colors = {
+  critical: {
+    bg: '#FEF2F2',
+    border: '#FCA5A5',
+    text: '#991B1B',
+    badge: '#DC2626',
+    highlight: '#FECACA',
+  },
+  timeSensitive: {
+    bg: '#FFFBEB',
+    border: '#FCD34D',
+    text: '#92400E',
+    badge: '#D97706',
+    highlight: '#FDE68A',
+  },
+  informational: {
+    bg: '#F0FDF4',
+    border: '#86EFAC',
+    text: '#166534',
+    badge: '#16A34A',
+    highlight: '#BBF7D0',
+  },
+  jargon: '#FEF9C3',
+  deadline: '#FEE2E2',
+  instruction: '#DBEAFE',
+  ...m3Colors,
 } as const;
 
 export const spacing = {
-  xs: '0.25rem',   // 4px
-  sm: '0.5rem',    // 8px
-  md: '1rem',      // 16px
-  lg: '1.5rem',    // 24px
-  xl: '2rem',      // 32px
-  '2xl': '3rem',   // 48px
-  '3xl': '4rem',   // 64px
+  unit: '4px',
+  gutter: '16px',
+  containerPadding: '24px',
+  cardGap: '20px',
+} as const;
+
+export const elevation = {
+  card: '0 1px 3px rgba(28, 25, 23, 0.05), 0 1px 2px rgba(28, 25, 23, 0.1)',
+  cardHover: '0 4px 12px rgba(28, 25, 23, 0.05)',
+  selected: '0 2px 8px rgba(28, 25, 23, 0.08)',
 } as const;
 
 export const urgencyLevels = ['CRITICAL', 'TIME-SENSITIVE', 'INFORMATIONAL'] as const;
-export type UrgencyLevel = typeof urgencyLevels[number];
+export type UrgencyLevel = (typeof urgencyLevels)[number];

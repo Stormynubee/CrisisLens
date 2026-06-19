@@ -65,30 +65,38 @@ CrisisLens is **not** a black-box chatbot. It is a **paper-plain visual workspac
 
 | Path | Purpose |
 |------|---------|
+| `/welcome` | First-visit onboarding — upload PDF/TXT or pick a demo document |
 | `/` | Landing — document picker, language selector, Analyze → viewer |
-| `/viewer?doc=&lang=&demo=` | Split-pane workspace |
-| `/api/gist` | Live paragraph gist (POST, Gemini) — used only when demo mode is off |
+| `/viewer?doc=&lang=&demo=` | Split-pane workspace (55/45 desktop; gist drawer on mobile) |
+| `/api/ingest` | Upload PDF or plain text → parsed `DocumentData` (max 5 MB) |
+| `/api/gist` | Live paragraph gist (POST, Gemini) — used when demo mode is off |
 | `/api/urgency` | Deterministic urgency check (POST) |
 
-**Three demo documents** (no file upload in v1):
+**Demo documents** (also available on `/welcome`):
 
 - `kv-heatwave` — school heat-wave circular
 - `hospital-discharge` — post-accident discharge summary (primary video demo)
 - `pm-kisan-rejection` — government payment rejection with appeal window
 
+**Uploads:** On `/welcome`, drag-and-drop or select a `.pdf` or `.txt` file (≤ 5 MB). The parsed document opens in the viewer with live gist (`demo=false`). Upload payload is stored in `sessionStorage` for the current tab only.
+
 ---
 
 ## Screenshots
 
-| Landing | Split-pane viewer (Odia demo) |
-|---------|-------------------------------|
-| ![Landing](docs/screenshots/01-landing.png) | ![Viewer](docs/screenshots/02-viewer-split-pane.png) |
+| Onboarding | Landing |
+|------------|---------|
+| ![Welcome](docs/screenshots/00-welcome.png) | ![Landing](docs/screenshots/01-landing.png) |
 
-| Odia gist + HITL | Mobile layout |
-|------------------|---------------|
-| ![Odia gist](docs/screenshots/03-viewer-odia-gist.png) | ![Mobile](docs/screenshots/04-viewer-mobile.png) |
+| Split-pane viewer | Odia gist + HITL |
+|-------------------|------------------|
+| ![Viewer](docs/screenshots/02-viewer-split-pane.png) | ![Odia gist](docs/screenshots/03-viewer-odia-gist.png) |
 
-Captured automatically from production with Playwright (`npm run screenshots`).
+| Mobile layout |
+|---------------|
+| ![Mobile](docs/screenshots/04-viewer-mobile.png) |
+
+Captured automatically from production with Playwright (`npm run screenshots`). The script sets an onboarding cookie before landing/viewer captures.
 
 ---
 

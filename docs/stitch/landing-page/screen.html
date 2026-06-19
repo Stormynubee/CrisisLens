@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CrisisLens</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Source+Serif+4:opsz,wght@8..60,400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed": "#e9e1dd",
+                        "surface-container-highest": "#e6e1e0",
+                        "surface": "#fdf8f7",
+                        "error-container": "#ffdad6",
+                        "on-surface-variant": "#4d4540",
+                        "primary": "#000000",
+                        "surface-container-low": "#f7f3f1",
+                        "on-primary-fixed": "#1e1b19",
+                        "tertiary-fixed": "#e2e2e2",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed-dim": "#c6c6c6",
+                        "on-secondary": "#ffffff",
+                        "inverse-primary": "#ccc5c2",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#ccc5c2",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "on-secondary-fixed-variant": "#4a4641",
+                        "on-primary-container": "#888380",
+                        "tertiary": "#000000",
+                        "on-secondary-fixed": "#1e1b17",
+                        "on-error-container": "#93000a",
+                        "outline-variant": "#d0c4be",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-container": "#e5ded8",
+                        "background": "#fdf8f7",
+                        "secondary-fixed-dim": "#ccc5bf",
+                        "surface-bright": "#fdf8f7",
+                        "secondary-fixed": "#e8e1db",
+                        "outline": "#7e7570",
+                        "on-primary-fixed-variant": "#4a4643",
+                        "inverse-on-surface": "#f4f0ef",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#ddd9d8",
+                        "surface-variant": "#e6e1e0",
+                        "inverse-surface": "#313030",
+                        "tertiary-container": "#1a1c1c",
+                        "surface-container-high": "#ece7e6",
+                        "secondary": "#625e59",
+                        "surface-container": "#f1edec",
+                        "primary-container": "#1e1b19",
+                        "on-secondary-container": "#66625d",
+                        "error": "#ba1a1a",
+                        "surface-tint": "#625d5b",
+                        "on-tertiary-container": "#838484",
+                        "on-background": "#1c1b1b",
+                        "on-surface": "#1c1b1b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "16px",
+                        "unit": "4px",
+                        "container-padding": "24px",
+                        "card-gap": "20px"
+                    },
+                    "fontFamily": {
+                        "body-sm": ["Inter"],
+                        "display-lg": ["\"Source Serif 4\""],
+                        "label-md": ["JetBrains Mono"],
+                        "display-lg-mobile": ["\"Source Serif 4\""],
+                        "label-sm": ["JetBrains Mono"],
+                        "headline-md": ["\"Source Serif 4\""],
+                        "body-base": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "display-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-md": ["13px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }],
+                        "display-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "body-base": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-base text-body-base antialiased selection:bg-surface-container-highest min-h-screen flex flex-col">
+<!-- TopNavBar (Shared Component Placeholder) -->
+<!-- Content logic applied: Suppressed as this is a linear/transactional landing page intent -->
+<!-- Custom Header for Landing Page -->
+<header class="bg-surface-container-lowest border-b border-outline-variant h-[56px] w-full sticky top-0 z-50 flex justify-between items-center px-container-padding shadow-sm">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-primary rounded flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</div>
+<span class="font-headline-md text-[18px] font-bold text-primary">CrisisLens</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="hidden md:flex bg-surface-container-low rounded-full p-1 border border-outline-variant">
+<button class="px-3 py-1 font-label-sm text-label-sm rounded-full bg-surface-container-lowest shadow-sm text-primary">EN</button>
+<button class="px-3 py-1 font-label-sm text-label-sm rounded-full text-on-surface-variant hover:text-primary transition-colors">HI</button>
+<button class="px-3 py-1 font-label-sm text-label-sm rounded-full text-on-surface-variant hover:text-primary transition-colors">OD</button>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-full border border-outline-variant bg-surface-container-lowest">
+<div class="w-2 h-2 rounded-full bg-[#3b82f6] animate-pulse"></div>
+<span class="font-label-sm text-label-sm text-primary">Demo Mode</span>
+</div>
+</div>
+</header>
+<main class="flex-grow flex flex-col items-center justify-center p-container-padding w-full">
+<div class="w-full max-w-[640px] flex flex-col gap-12 mt-8 mb-16">
+<!-- Hero Section -->
+<section class="flex flex-col items-center text-center gap-4">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary max-w-lg mx-auto">
+                    Understand emergency documents when every minute counts
+                </h1>
+<p class="font-body-base text-[15px] text-on-surface-variant max-w-md mx-auto">
+                    CrisisLens highlights confusing sections, translates complex jargon, and extracts actionable steps from bureaucratic paperwork.
+                </p>
+<div class="flex flex-wrap justify-center gap-3 mt-4">
+<div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container rounded-full border border-outline-variant">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">visibility</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Clarity</span>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container rounded-full border border-outline-variant">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">shield</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Secure</span>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container rounded-full border border-outline-variant">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">language</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Multi-lingual</span>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container rounded-full border border-outline-variant">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">bolt</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Fast</span>
+</div>
+</div>
+</section>
+<!-- Document Picker -->
+<section class="flex flex-col gap-6">
+<h2 class="font-label-md text-label-md uppercase text-on-surface-variant tracking-wider border-b border-outline-variant pb-2">
+                    Choose a document to understand
+                </h2>
+<div class="flex flex-col gap-4">
+<!-- Card 1 -->
+<label class="group relative flex flex-col p-5 bg-surface-container-lowest border border-outline-variant rounded-lg hover:border-primary cursor-pointer transition-all hover:shadow-[0_4px_12px_rgba(28,25,23,0.05)] shadow-[0_1px_3px_rgba(28,25,23,0.05)]">
+<input class="absolute right-5 top-5 w-4 h-4 text-primary border-outline-variant focus:ring-primary" name="document-selection" type="radio"/>
+<div class="flex items-start gap-4 pr-8">
+<div class="w-10 h-10 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-blue-600">article</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-headline-md text-headline-md text-primary">KV Dharamgarh Heat-Wave Circular</span>
+<span class="px-2 py-0.5 bg-blue-100 text-blue-800 font-label-sm text-[10px] uppercase rounded-full tracking-wide">Time-Sensitive</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 border-l-2 border-outline-variant pl-3 italic">
+                                    "I received this notice from Priya's school. Does she have classes tomorrow during the heatwave warning?"
+                                </p>
+</div>
+</div>
+</label>
+<!-- Card 2 -->
+<label class="group relative flex flex-col p-5 bg-surface-container-lowest border border-outline-variant rounded-lg hover:border-primary cursor-pointer transition-all hover:shadow-[0_4px_12px_rgba(28,25,23,0.05)] shadow-[0_1px_3px_rgba(28,25,23,0.05)]">
+<input checked="" class="absolute right-5 top-5 w-4 h-4 text-primary border-outline-variant focus:ring-primary" name="document-selection" type="radio"/>
+<div class="flex items-start gap-4 pr-8">
+<div class="w-10 h-10 rounded-full bg-red-50 border border-red-100 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-error">favorite</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-headline-md text-headline-md text-primary">Hospital Discharge Summary</span>
+<span class="px-2 py-0.5 bg-error-container text-on-error-container font-label-sm text-[10px] uppercase rounded-full tracking-wide">Critical</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 border-l-2 border-outline-variant pl-3 italic">
+                                    "They handed me these papers when discharging my mother, Sunita Devi. I don't understand the medication schedule."
+                                </p>
+</div>
+</div>
+</label>
+<!-- Card 3 -->
+<label class="group relative flex flex-col p-5 bg-surface-container-lowest border border-outline-variant rounded-lg hover:border-primary cursor-pointer transition-all hover:shadow-[0_4px_12px_rgba(28,25,23,0.05)] shadow-[0_1px_3px_rgba(28,25,23,0.05)]">
+<input class="absolute right-5 top-5 w-4 h-4 text-primary border-outline-variant focus:ring-primary" name="document-selection" type="radio"/>
+<div class="flex items-start gap-4 pr-8">
+<div class="w-10 h-10 rounded-full bg-amber-50 border border-amber-100 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-amber-600">account_balance</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-headline-md text-headline-md text-primary">PM-KISAN Rejection Notice</span>
+<span class="px-2 py-0.5 bg-amber-100 text-amber-800 font-label-sm text-[10px] uppercase rounded-full tracking-wide">Time-Sensitive</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 border-l-2 border-outline-variant pl-3 italic">
+                                    "My application was rejected, Ramesh Patra. It says something about a mismatch in records. How do I fix this?"
+                                </p>
+</div>
+</div>
+</label>
+</div>
+<button class="w-full h-12 bg-primary text-on-primary rounded-md font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-on-primary-fixed-variant transition-colors mt-2">
+<span>Analyze Document</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</section>
+</div>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-surface-container-lowest dark:bg-surface-dim w-full py-4 border-t border-outline-variant dark:border-outline flex flex-col md:flex-row justify-between items-center px-container-padding gap-4">
+<div class="font-label-md text-label-md font-bold text-on-surface-variant dark:text-on-surface-variant">
+            © 2024 CrisisLens System. HITL Monitoring Active.
+        </div>
+<div class="flex gap-4">
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Terms of Service</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Emergency Protocol</a>
+</div>
+</footer>
+</body></html>

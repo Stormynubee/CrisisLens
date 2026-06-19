@@ -63,8 +63,10 @@ function main() {
   assert('package.json has build script', typeof pkg.scripts.build === 'string');
   assert('package.json has start script', typeof pkg.scripts.start === 'string');
 
-  assert('landing page exists', existsSync(join(ROOT, 'src/app/page.tsx')));
-  assert('viewer page exists', existsSync(join(ROOT, 'src/app/viewer/page.tsx')));
+  assert('landing page exists', existsSync(join(ROOT, 'src/app/(marketing)/page.tsx')));
+  assert('welcome page exists', existsSync(join(ROOT, 'src/app/(onboarding)/welcome/page.tsx')));
+  assert('viewer page exists', existsSync(join(ROOT, 'src/app/(viewer)/viewer/page.tsx')));
+  assert('api/ingest route exists', existsSync(join(ROOT, 'src/app/api/ingest/route.ts')));
   assert('api/gist route exists', existsSync(join(ROOT, 'src/app/api/gist/route.ts')));
   assert('api/urgency route exists', existsSync(join(ROOT, 'src/app/api/urgency/route.ts')));
 
@@ -84,6 +86,11 @@ function main() {
     warn('public/og-image.png missing — optional for Devpost / social preview');
   } else {
     assert('public/og-image.png exists', true);
+  }
+  if (!existsSync(join(ROOT, 'docs/screenshots/00-welcome.png'))) {
+    warn('docs/screenshots/00-welcome.png missing — run npm run screenshots before Devpost');
+  } else {
+    assert('docs/screenshots/00-welcome.png exists', true);
   }
   if (!existsSync(join(ROOT, 'docs/screenshots/01-landing.png'))) {
     warn('docs/screenshots/01-landing.png missing — run npm run screenshots before Devpost');
