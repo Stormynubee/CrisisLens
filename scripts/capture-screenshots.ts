@@ -61,8 +61,9 @@ async function main() {
   const paragraph = page.getByTestId('paragraph-p-7');
   await paragraph.waitFor({ timeout: 15000 });
   await paragraph.click();
-  await page.getByTestId('gist-sidebar-content').waitFor({ timeout: 10000 });
+  await page.locator('#gist-sidebar').getByTestId('gist-sidebar-content').waitFor({ timeout: 10000 });
   await page
+    .locator('#gist-sidebar')
     .getByTestId('gist-sidebar-content')
     .getByText(ODIA_GIST_MARKER)
     .first()
@@ -93,9 +94,10 @@ async function main() {
   await mobilePage.goto(`${BASE_URL}${VIEWER_URL}`, { waitUntil: 'networkidle' });
   await mobilePage.getByTestId('paragraph-p-7').waitFor({ timeout: 15000 });
   await mobilePage.getByTestId('paragraph-p-7').click();
-  await mobilePage.getByRole('dialog', { name: 'Analysis panel' }).waitFor({ timeout: 10000 });
-  await mobilePage.getByTestId('gist-sidebar-content').waitFor({ timeout: 10000 });
-  await mobilePage
+  const mobileDialog = mobilePage.getByRole('dialog', { name: 'Analysis panel' });
+  await mobileDialog.waitFor({ timeout: 10000 });
+  await mobileDialog.getByTestId('gist-sidebar-content').waitFor({ timeout: 10000 });
+  await mobileDialog
     .getByTestId('gist-sidebar-content')
     .getByText(ODIA_GIST_MARKER)
     .first()
